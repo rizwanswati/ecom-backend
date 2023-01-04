@@ -1,0 +1,1 @@
+   INFO  The [C:\xampp\htdocs\ecom-backend\public\storage] link has been connected to [C:\xampp\htdocs\ecom-backend\storage\app/public].
