@@ -34,6 +34,10 @@ class UserController extends Controller
         return $data;
     }
 
+    public function getAllProducts(){
+       return Products::all();
+    }
+
     public function addProduct(Request $request)
     {
         $products = new Products;
@@ -44,7 +48,7 @@ class UserController extends Controller
         $products->name = $request->input('name');
         $products->price = $request->input('price');
         $products->description = $request->input('description');
-        $products->img = $path;
+        $products->img = $filename;
         $products->save();
 
         return response($path,200);
